@@ -1,0 +1,40 @@
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.sidebar a { 
+    color: #007bff; /* Light blue accent */ 
+}
+
+.main-content-open {
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s, width 0.2s;
+}
+
+.main-content-closed {
+    width: calc(100% - 10px);
+    transition: margin-left 0.3s, width 0.2s;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 60px;
+    z-index: 1000;
+    background-color: #e6e6e6; /* Slightly darker grey than sidebar */ 
+}
+
+.topbar h1 { /* Example of text color */
+    color: #1a1a1a;  /* Dark grey */ 
+}
